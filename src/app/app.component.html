@@ -1,0 +1,9 @@
+<div *ngIf="jsonData.students">
+  <div *ngFor="let student of jsonData.students">
+    <h1 [innerHTML]="'Student id: ' + student.id"></h1>
+    <p [innerHTML]="'        firstname: ' + student.firstname"></p>
+    <p [innerHTML]="'        lastname: ' + student.lastname"></p>
+    <p [innerHTML]="'        subject: ' + student.subject"></p>
+    <p [innerHTML]="'        marks: ' + student.marks"></p>
+  </div>
+</div>
